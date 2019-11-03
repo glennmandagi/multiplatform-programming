@@ -2,6 +2,10 @@ import React from 'react';
 import { Text, StyleSheet, View, Image } from 'react-native';
 
 const ComponentScreen = () => {
+
+    const myName = 'John Doe';
+    const helloWorld = <Text>Hello World</Text>;
+
     return (
         <View>
             <Image 
@@ -12,8 +16,9 @@ const ComponentScreen = () => {
                 This is component Screen 
             </Text>
             <Text style={styles.textStyle2}>
-                Hello World
+                {myName}
             </Text>
+            {helloWorld}
         </View> 
     );
 };

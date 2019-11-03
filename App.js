@@ -1,12 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import ComponentScreen from './screens/ComponentScreen';
+import StudentScreen from './screens/StudentScreen';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <ComponentScreen /> 
-    </View>
+    
+      <StudentScreen /> 
+    
   );
 }
 
