@@ -22,7 +22,8 @@ const StudentScreen = () => {
                 <View style={styles.textStyle}>
                     <Image 
                         style={{width: 200, height: 200}}
-                        source={{uri: item.imageUrl}}
+                        // source={{uri: item.imageUrl}}
+                        source={require('../assets/apple-logo.jpg')}
                     />
                     <Text >
                         {item.name}

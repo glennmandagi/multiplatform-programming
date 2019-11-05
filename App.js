@@ -2,14 +2,21 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import ComponentScreen from './screens/ComponentScreen';
 import StudentScreen from './screens/StudentScreen';
+import HomeScreen from './screens/HomeScreen';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-export default function App() {
-  return (
-    
-      <StudentScreen /> 
-    
-  );
-}
+const navigator = createStackNavigator({
+  Component: ComponentScreen,
+  Student: StudentScreen,
+  Home: HomeScreen
+},{
+  initialRouteName: 'Home',
+  defaultNavigationOptions: {
+    headerTitle: 'Multiplatform App'
+  }
+});
+
+export default createAppContainer(navigator);
 
 const styles = StyleSheet.create({
   container: {
